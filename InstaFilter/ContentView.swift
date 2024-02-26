@@ -71,15 +71,16 @@ struct ContentView: View {
             .sheet(isPresented: $showImgPicker) {
                 ImagePicker(image: $inputImage)
             }
-            .confirmationDialog("Select a filter", isPresented: $showFilter) {
-                Button("Crystallize") { setFilter(CIFilter.crystallize())}
-                Button("Edges") { setFilter(CIFilter.edges())}
-                Button("Gaussian Blur") { setFilter(CIFilter.gaussianBlur())}
-                Button("Pixellate") { setFilter(CIFilter.pixellate())}
-                Button("Sepia tone") { setFilter(CIFilter.sepiaTone())}
-                Button("Unsharp Mask") { setFilter(CIFilter.unsharpMask())}
-                Button("VIgnette") { setFilter(CIFilter.vignette())}
-                Button("Cancel", role: .cancel) { }
+            .confirmationDialog(stringTitle.confirmationTitle, isPresented: $showFilter) {
+                
+                Button(stringTitle.crystallize) { setFilter(CIFilter.crystallize())}
+                Button(stringTitle.edges) { setFilter(CIFilter.edges())}
+                Button(stringTitle.gaussianBlur) { setFilter(CIFilter.gaussianBlur())}
+                Button(stringTitle.pixellate) { setFilter(CIFilter.pixellate())}
+                Button(stringTitle.sepiaTone) { setFilter(CIFilter.sepiaTone())}
+                Button(stringTitle.unsharpMask) { setFilter(CIFilter.unsharpMask())}
+                Button(stringTitle.vignette) { setFilter(CIFilter.vignette())}
+                Button(stringTitle.cancel, role: .cancel) { }
                 
             }
             
@@ -103,11 +104,11 @@ struct ContentView: View {
         let imageSaver = ImageSaver()
         
         imageSaver.successHandler = {
-            print("Saved Successfully!")
+            print(stringTitle.saveSucc)
         }
         
         imageSaver.errorHandler = {
-            print("Faild to save image! \($0.localizedDescription)")
+            print($0.localizedDescription)
         }
         
         imageSaver.writePhotoAlbum(image: processedImg)
