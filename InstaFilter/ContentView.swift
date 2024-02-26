@@ -45,7 +45,7 @@ struct ContentView: View {
                 }
                 
                 HStack{
-                    Text("Intensity")
+                    Text(stringTitle.intensity)
                     Slider(value: $filterIntensity)
                         .onChange(of: filterIntensity) { _ in
                             applyProcessing()
@@ -54,17 +54,17 @@ struct ContentView: View {
                 }.padding(.vertical)
                 
                 HStack{
-                    Button("Change Filter") {
+                    Button(stringTitle.changeFilter) {
                         showFilter = true
                     }
                     
                     Spacer()
-                    Button("Save", action: save)
+                    Button(stringTitle.save, action: save)
                 }
                 
             }
             .padding([.horizontal, .bottom])
-            .navigationTitle("InstaFilter")
+            .navigationTitle(stringTitle.navTitle)
             .onChange(of: inputImage) { _ in
                 loadImage()
             }
