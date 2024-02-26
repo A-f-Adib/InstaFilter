@@ -23,6 +23,7 @@ struct ContentView: View {
     
     @State private var showFilter = false
     
+   var stringTitle = StringTitle()
     
     var body: some View {
         NavigationView{
@@ -31,7 +32,7 @@ struct ContentView: View {
                     Rectangle()
                         .fill(.secondary)
                     
-                    Text("Tap to select a picture")
+                    Text(stringTitle.tapTile)
                         .foregroundColor(.white)
                         .font(.headline)
                     

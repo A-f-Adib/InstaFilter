@@ -13,6 +13,7 @@
 		741162B32B2FA81600BAB8DF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 741162B22B2FA81600BAB8DF /* Preview Assets.xcassets */; };
 		741162BA2B2FA83F00BAB8DF /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 741162B92B2FA83F00BAB8DF /* ImagePicker.swift */; };
 		749C7DE82B3504B200ACF314 /* ImageSaver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 749C7DE72B3504B200ACF314 /* ImageSaver.swift */; };
+		74EC1C0B2B8D1E7B00BA488E /* StringTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74EC1C0A2B8D1E7B00BA488E /* StringTitle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		741162B22B2FA81600BAB8DF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		741162B92B2FA83F00BAB8DF /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		749C7DE72B3504B200ACF314 /* ImageSaver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSaver.swift; sourceTree = "<group>"; };
+		74EC1C0A2B8D1E7B00BA488E /* StringTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringTitle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				741162AD2B2FA81400BAB8DF /* ContentView.swift */,
 				741162B92B2FA83F00BAB8DF /* ImagePicker.swift */,
 				749C7DE72B3504B200ACF314 /* ImageSaver.swift */,
+				74EC1C0A2B8D1E7B00BA488E /* StringTitle.swift */,
 				741162AF2B2FA81600BAB8DF /* Assets.xcassets */,
 				741162B12B2FA81600BAB8DF /* Preview Content */,
 			);
@@ -143,6 +146,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74EC1C0B2B8D1E7B00BA488E /* StringTitle.swift in Sources */,
 				741162BA2B2FA83F00BAB8DF /* ImagePicker.swift in Sources */,
 				741162AE2B2FA81400BAB8DF /* ContentView.swift in Sources */,
 				741162AC2B2FA81400BAB8DF /* InstaFilterApp.swift in Sources */,
